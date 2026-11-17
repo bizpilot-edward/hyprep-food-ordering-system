@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HYPREP | Sign in</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-brand">
+      <div class="brand-mark">H</div><p class="eyebrow">HYPREP FOOD SERVICES</p>
+      <h1>Good food.<br><em>Made easy.</em></h1>
+      <p class="muted-light">Order your favourites, follow every order, and enjoy a smoother food experience.</p>
+      <div class="brand-foot">Freshly prepared. Thoughtfully served.</div>
+    </section>
+    <section class="auth-panel">
+      <div class="panel-top"><span class="eyebrow">WELCOME</span><span class="secure"><i></i> Secure access</span></div>
+      <h2 id="authTitle">Welcome back</h2><p class="muted" id="authSubtitle">Sign in to continue to your account.</p>
+      <form id="authForm" class="form-stack">
+        <label>Email address<input id="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="password" type="password" placeholder="Enter your password" minlength="6" required></label>
+        <button class="btn btn-dark full" id="authSubmit" type="submit">Sign in</button>
+      </form>
+      <p class="auth-switch" id="authSwitch">New to HYPREP? <button type="button" class="text-button" id="toggleAuth">Create an account</button></p>
+      <p class="notice" id="authMessage" role="status"></p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
+</body></html>
